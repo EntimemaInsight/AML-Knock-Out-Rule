@@ -1,9 +1,0 @@
-# Define Flag variable if a match with prohibited country is found
-data.prohibited_country_match = 0
-
-# Check if the citizenship variable matches any of the countries in the list
-if data.citizenship in params.prohibited_countries_list:
-   data.prohibited_country_match = 1
-else:
-  data.prohibited_country_match = 0
-
