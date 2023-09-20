@@ -1,0 +1,3 @@
+data.aml_adverse_media = any([("Adverse Media" in reason) for reason in data.lexisnexis_reasons])
+data.aml_policially_exposed_person = any([("PEP" in reason) for reason in data.lexisnexis_reasons])
+data.aml_sanctions_and_enforcements = any([("Sanction List" in reason) or ("Enforcement" in reason) for reason in data.lexisnexis_reasons])
